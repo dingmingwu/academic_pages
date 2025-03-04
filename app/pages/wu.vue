@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div v-if="showGroup" class="group3">
+      <div v-if="showGroup2" class="group3">
         <p class="gtitle">Efficient Skyline Keyword-Based Tree Retrieval on Attributed Graphs (TKDE 2024)</p>
         <p class="gintro">Attributed graphs are graphs, where the vertices have attributes. Such graphs encompass, e.g., social network graph, citation graphs, and knowledge graphs, which have numerous real-world applications. Keyword-based search is a prominent and user-friendly way of querying attributed graphs. One widely used approach to keyword search adopts tree-based query semantics that relies on scoring functions that aggregate distances from a root to keyword-matched vertices. However, it is non-trivial to design scoring functions that capture different users’ keyword preferences. This study defines and solves the skyline KTree retrieval problem that combines keyword querying with skyline functionality on attributed graphs. The result of a skyline KTree query is independent of scoring functions. Hence, no matter which keywords are preferred, users can always find their favorite KTrees in a result. To enable efficient skyline KTree retrieval, we propose algorithm FilterRefine that first identifies candidate results and then uses them for search space pruning. Computing distances between keywords and vertices is expensive and dominates the computational cost of FilterRefine. Inspired by subspace skyline query techniques, we convert the skyline KTree retrieval problem into a multi-dimensional subspace skyline problem and propose algorithm MultiDiSkylineOpt. This algorithm is able to reuse skylines in subspaces and uses bounds on all dimensions to accelerate distance computation. Experimental results on real datasets show that a baseline algorithm cannot report results within a 500 second cut-off time, while the proposed algorithms are able to compute results in reasonable time. In particular, MultiDiSkylineOpt is able to efficiently retrieve skyline KTrees on large graphs with millions of nodes and hundreds of millions of edges.</p>
         <div style="display: flex;" class="gimgs">
@@ -74,10 +74,10 @@
         </div>
       </div>
       <p style="display: flex; margin-top: 24px; height: 30px; line-height: 30px; color: #2F81FC; font-weight: 400; font-size: 14px;">
-        <button class="toggle-button" @click="toggleGroup" >
-            {{ showGroup ? 'FOLD' : 'If you want to view more projects, please click MORE' }}
-            <img v-if="showGroup" src="/image/icon_fold.png" alt="" style="width: 10px; height: 10px; margin-left: 6px; margin-top: 10px;">
-            <img v-else src="/image/icon_open.png" alt="" style="width: 10px; height: 10px; margin-left: 6px; margin-top: 10px;">
+        <button class="toggle-button" @click="toggleGroup2" >
+            {{ showGroup2 ? 'FOLD' : 'If you want to view more projects, please click MORE' }}
+            <img v-if="showGroup2" src="/image/icon_fold.png" alt="" class="tbbutton2">
+            <img v-else src="/image/icon_open.png" alt="" class=tbbutton>
         </button>
       </p>
       <!-- <div v-if="showGroup" class="group3">
