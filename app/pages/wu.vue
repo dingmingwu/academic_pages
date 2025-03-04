@@ -33,12 +33,12 @@
         <!-- <div class="rectangle3" /> -->
         <!-- <div class="rectangle4" /> -->
         <p class="ritext">
-          My general research area is data management. Recently, much of my research concerns problems from geo-textual, geo-social network, and large graph data, including data analytics, approximation algorithms, data modeling, query languages, query processing, and data mining.
+          My general research area is data management. Recently, much of my research concerns problems from large graph data and spatial data, including data analytics, approximation algorithms, data modeling, query languages, query processing, and data mining.
         </p>
       </div>
       <p class="Selected-projects">Selected projects</p>
       <div class="group">
-        <p class="gtitle">Efficient and Accurate PageRank Approximation on Large Graphs</p>
+        <p class="gtitle">Efficient and Accurate PageRank Approximation on Large Graphs (SIGMOD 2025)</p>
         <p class="gintro">PageRank is a commonly used measurement in a wide range of applications, including search engines, recommendation systems, and social networks. However, this measurement suffers from huge computational overhead, which cannot be scaled to large graphs. Although many approximate algorithms have been proposed for computing PageRank values, these algorithms are either (i) not efficient or (ii) not accurate. Worse still, some of them cannot provide estimated PageRank values for all the vertices. In this paper, we first propose the CUR-Trans algorithm, which can reduce the time complexity for computing PageRank values and has lower error bound than existing matrix approximation-based PageRank algorithms. Then, we develop the T2-Approx algorithm to further reduce the time complexity for computing this measurement. Experiment results on three large-scale graphs show that both the CUR-Trans algorithm and the T2-Approx algorithm achieve the lowest response time for computing PageRank values with the best accuracy (for the CUR-Trans algorithm) or the competitive accuracy (for the T2-Approx algorithm). Besides, the two proposed algorithms are able to provide estimated PageRank values for all the vertices.</p>
         <div style="display: flex; position: relative;" class="gimgs">
           <div class="image-container" data-text="Click to view">
@@ -236,28 +236,28 @@
           <p class="ctitle">Students</p>
           <div class="ctext">
             <h1>在读学生</h1>
-            <p>博士生：伍斯玥</p>
-            <p>硕士生：全俊熠，卓仙鸿，黄经研，唐伟科，刘洋，吴浩钊，黄爽怡，王凯涛，熊国伟，李可欣，骆逸文，黄伊桦，廖明申</p>
+            <p>博士生：伍斯玥，熊子谞</p>
+            <p>硕士生：全俊熠，卓仙鸿，黄经研，唐伟科，刘洋，吴浩钊，黄爽怡，王凯涛，熊国伟，李可欣，骆逸文，黄伊桦，廖明申，韦旭南</p>
             <br>
             <h1>毕业学生</h1>
-            <p>赖新颖，华为</p>
-            <p>吕华彬，九维数据技术有限公司</p>
-            <p>袁楚杰，字节跳动</p>
-            <p>张钊奋，深圳杉岩数据技术有限公司，优秀毕业生</p>
-            <p>朱思潼，公务员（国家税务总局广州市税务局）</p>
-            <p>李密，招银网络科技有限公司</p>
-            <p>杜国良，广州凯媒通讯技术有限公司</p>
-            <p>吴亿欣，中国人寿保险股份有限公司</p>
-            <p>周钰琪，公务员（深圳市社会保险基金管理局宝安分局）</p>
-            <p>吴松，读博（Utrecht University, Netherlands）</p>
-            <p>林俊杰，招银网络科技有限公司</p>
-            <p>陈萌，上海微创医疗机器人</p>
-            <p>詹金颖，华为</p>
-            <p>李昕宸，读博（深圳大学）</p>
-            <p>侯灿，建信金融科技公司</p>
-            <p>周豪，华为</p>
-            <p>罗德新，腾讯</p>
-            <p>朱艺，字节跳动，优秀毕业生</p>
+            <p>赖新颖，华为，2024</p>
+            <p>吕华彬，九维数据技术有限公司，2024</p>
+            <p>袁楚杰，字节跳动，2024</p>
+            <p>张钊奋，深圳杉岩数据技术有限公司，优秀毕业生，2024</p>
+            <p>朱思潼，公务员（国家税务总局广州市税务局），2024</p>
+            <p>李密，招银网络科技有限公司，2023</p>
+            <p>杜国良，广州凯媒通讯技术有限公司，2023</p>
+            <p>吴亿欣，中国人寿保险股份有限公司，2023</p>
+            <p>周钰琪，公务员（深圳市社会保险基金管理局宝安分局），2023</p>
+            <p>吴松，读博（Utrecht University, Netherlands），2022</p>
+            <p>林俊杰，招银网络科技有限公司，2022</p>
+            <p>陈萌，上海微创医疗机器人，2022</p>
+            <p>詹金颖，华为，2022</p>
+            <p>李昕宸，读博（深圳大学），2021</p>
+            <p>侯灿，建信金融科技公司，2020</p>
+            <p>周豪，华为，2020</p>
+            <p>罗德新，腾讯，2019</p>
+            <p>朱艺，字节跳动，优秀毕业生，2019</p>
           </div>
           <button class="more3" style="display: flex;" @click="moreteaching(3)">
             MORE
