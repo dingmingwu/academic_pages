@@ -459,7 +459,7 @@ const navigateTowu = () => {
     width: 304px;
     height: 634px;
     background-color: #FFFFFF;
-    text-align: center;
+    /*text-align: center;*/
     border-radius: 20px;
   }
   .member {

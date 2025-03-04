@@ -33,12 +33,12 @@
         <!-- <div class="rectangle3" /> -->
         <!-- <div class="rectangle4" /> -->
         <p class="ritext">
-          My general research area is data management. Recently, much of my research concerns problems from geo-textual, geo-social network, and large graph data, including data analytics, approximation algorithms, data modeling, query languages, query processing, and data mining.
+          My general research area is data management. Recently, much of my research concerns problems from large graph data and spatial data, including data analytics, approximation algorithms, data modeling, query languages, query processing, and data mining.
         </p>
       </div>
       <p class="Selected-projects">Selected projects</p>
       <div class="group">
-        <p class="gtitle">Efficient and Accurate PageRank Approximation on Large Graphs</p>
+        <p class="gtitle">Efficient and Accurate PageRank Approximation on Large Graphs (SIGMOD 2025)</p>
         <p class="gintro">PageRank is a commonly used measurement in a wide range of applications, including search engines, recommendation systems, and social networks. However, this measurement suffers from huge computational overhead, which cannot be scaled to large graphs. Although many approximate algorithms have been proposed for computing PageRank values, these algorithms are either (i) not efficient or (ii) not accurate. Worse still, some of them cannot provide estimated PageRank values for all the vertices. In this paper, we first propose the CUR-Trans algorithm, which can reduce the time complexity for computing PageRank values and has lower error bound than existing matrix approximation-based PageRank algorithms. Then, we develop the T2-Approx algorithm to further reduce the time complexity for computing this measurement. Experiment results on three large-scale graphs show that both the CUR-Trans algorithm and the T2-Approx algorithm achieve the lowest response time for computing PageRank values with the best accuracy (for the CUR-Trans algorithm) or the competitive accuracy (for the T2-Approx algorithm). Besides, the two proposed algorithms are able to provide estimated PageRank values for all the vertices.</p>
         <div style="display: flex; position: relative;" class="gimgs">
           <div class="image-container" data-text="Click to view">
@@ -50,7 +50,19 @@
         </div>
       </div>
       <div class="group2">
-        <p class="gtitle">Efficient Skyline Keyword-Based Tree Retrieval on Attributed Graphs</p>
+        <p class="gtitle">Spatially Compact Dense Block Mining in Spatial Tensors (KDD 2025)</p>
+        <p class="gintro">Spatial tensors have been extensively used in a wide range of applications, including remote sensing, geospatial information systems, conservation planning, and urban planning. We study the problem of Spatially Compact Dense (SCD) block mining in a spatial tensor, which targets for discovering dense blocks that cover small spatial regions. However, most of existing dense block mining (DBM) algorithms cannot solve the SCD-block mining problem since they only focus on maximizing the density of candidate blocks, so that the discovered blocks are spatially loose, i.e., covering large spatial regions. Therefore, we first formulate the problem of mining top-k Spatially Compact Dense blocks (SCD-blocks) in spatial tensors, which ranks SCD-blocks based on a new scoring function that takes both the density value and the spatial coverage into account. Then, we adopt a filter-refinement framework that first generates candidate SCD-blocks with good scores in the filtering phase and then uses the traditional DBM algorithm to further maximize the density values of the candidates in the refinement phase. Due to the NP-hardness of the problem, we develop two types of solutions in the filtering phase, namely the top-down solution and the bottom-up solution, which can find good candidate SCD-blocks by approximately solving the new scoring function. The evaluations on four real datasets verify that compared with the dense blocks returned by existing DBM algorithms, the proposed solutions are able to find SCD-blocks with comparable density values and significantly smaller spatial coverage. </p>
+        <div style="display: flex;" class="gimgs">
+          <div class="image-container" data-text="Click to view">
+            <el-image :src="`/academicpage/image/Eorder.png`" fit="cover" alt="" class="gimg1" :preview-src-list="['/academicpage/image/Eorder.png']"/>
+          </div>
+          <div class="image-container" data-text="Click to view">
+            <el-image :src="`/academicpage/image/amplify_Texas.png`" fit="cover" alt="" class="gimg2" :preview-src-list="['/academicpage/image/amplify_Texas.png']"/>
+          </div>
+        </div>
+      </div>
+      <div v-if="showGroup2" class="group3">
+        <p class="gtitle">Efficient Skyline Keyword-Based Tree Retrieval on Attributed Graphs (TKDE 2024)</p>
         <p class="gintro">Attributed graphs are graphs, where the vertices have attributes. Such graphs encompass, e.g., social network graph, citation graphs, and knowledge graphs, which have numerous real-world applications. Keyword-based search is a prominent and user-friendly way of querying attributed graphs. One widely used approach to keyword search adopts tree-based query semantics that relies on scoring functions that aggregate distances from a root to keyword-matched vertices. However, it is non-trivial to design scoring functions that capture different users’ keyword preferences. This study defines and solves the skyline KTree retrieval problem that combines keyword querying with skyline functionality on attributed graphs. The result of a skyline KTree query is independent of scoring functions. Hence, no matter which keywords are preferred, users can always find their favorite KTrees in a result. To enable efficient skyline KTree retrieval, we propose algorithm FilterRefine that first identifies candidate results and then uses them for search space pruning. Computing distances between keywords and vertices is expensive and dominates the computational cost of FilterRefine. Inspired by subspace skyline query techniques, we convert the skyline KTree retrieval problem into a multi-dimensional subspace skyline problem and propose algorithm MultiDiSkylineOpt. This algorithm is able to reuse skylines in subspaces and uses bounds on all dimensions to accelerate distance computation. Experimental results on real datasets show that a baseline algorithm cannot report results within a 500 second cut-off time, while the proposed algorithms are able to compute results in reasonable time. In particular, MultiDiSkylineOpt is able to efficiently retrieve skyline KTrees on large graphs with millions of nodes and hundreds of millions of edges.</p>
         <div style="display: flex;" class="gimgs">
           <div class="image-container" data-text="Click to view">
@@ -61,6 +73,13 @@
           </div>
         </div>
       </div>
+      <p style="display: flex; margin-top: 24px; height: 30px; line-height: 30px; color: #2F81FC; font-weight: 400; font-size: 14px;">
+        <button class="toggle-button" @click="toggleGroup2" >
+            {{ showGroup2 ? 'FOLD' : 'If you want to view more projects, please click MORE' }}
+            <img v-if="showGroup2" src="/image/icon_fold.png" alt="" class="tbbutton2">
+            <img v-else src="/image/icon_open.png" alt="" class=tbbutton>
+        </button>
+      </p>
       <!-- <div v-if="showGroup" class="group3">
         <p class="gtitle">Density-Based Top-K Spatial Textual Clusters Retrieval</p>
         <p class="gintro">So-called spatial web queries retrieve web content representing points of interest, such that the points of interest have descriptions that are relevant to query keywords and are located close to a query location. Two broad categories of such queries exist. The first encompasses queries that retrieve single spatial web objects that each satisfy the query arguments. Most proposals belong to this category. The second category, to which this paper's proposal belongs, encompasses queries that support exploratory user behavior and retrieve sets of objects that represent regions of space that may be of interest to the user. Specifically, the paper proposes a new type of query, the top-k spatial textual cluster retrieval (k-STC) query that returns the top-k clusters that (i) are located close to a query location, (ii) contain objects that are relevant with regard to given query keywords, and (iii) have an object density that exceeds a given threshold. To compute this query, we propose a DBSCAN-based approach and an OPTICS-based approach that rely on on-line density-based clustering and that exploit early stop conditions. Empirical studies on real data sets offer evidence that the paper's proposals can find good quality clusters and are capable of excellent performance.</p>
@@ -1042,9 +1061,9 @@ td p {
   text-shadow: 5px -3px 0px rgba(47,129,252,0.1);
 }
 .textbig {
-  padding-top: 40px;
+  margin-top: 40px;
   margin-inline: 40px;
-  height: 75%;
+  height: 70%;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -1211,7 +1230,7 @@ td p {
   .text {
     max-width: 304px;
     margin-top: 24px;
-    text-align: center;
+    /* text-align: center; */
   }
   .research {
     max-width: 304px;

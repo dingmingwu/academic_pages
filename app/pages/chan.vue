@@ -1266,9 +1266,9 @@ td p {
   text-shadow: 5px -3px 0px rgba(47,129,252,0.1);
 }
 .textbig {
-  padding-top: 40px;
+  margin-top: 40px;
   margin-inline: 40px;
-  height: 75%;
+  height: 70%;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -1436,7 +1436,7 @@ td p {
   .text {
     max-width: 304px;
     margin-top: 24px;
-    text-align: center;
+    /* text-align: center; */
   }
   .research {
     max-width: 304px;
